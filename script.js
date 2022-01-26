@@ -95,37 +95,61 @@ const averageKoalasScore = (kScore1 + kScore2 + kScore3) / 3;
 // const kScore3 = 106;
 // const averageKoalasScore = (kScore1 + kScore2 + kScore3) / 3;
 
-console.log(`The average score for Dolphon's Team is ${averageDolphinScore}`);
-console.log(`The average score for Koala's Team is ${averageKoalasScore}`);
+// console.log(`The average score for Dolphon's Team is ${averageDolphinScore}`);
+// console.log(`The average score for Koala's Team is ${averageKoalasScore}`);
 
-if (averageDolphinScore > averageKoalasScore) {
-	console.log(`Dolhin's are the winners`);
-} else if (averageDolphinScore === averageKoalasScore) {
-	console.log(`Match tied!`);
-} else if (averageKoalasScore > averageDolphinScore) {
-	console.log(`Koala's are the winners!`);
-}
+// if (averageDolphinScore > averageKoalasScore) {
+// 	console.log(`Dolhin's are the winners`);
+// } else if (averageDolphinScore === averageKoalasScore) {
+// 	console.log(`Match tied!`);
+// } else if (averageKoalasScore > averageDolphinScore) {
+// 	console.log(`Koala's are the winners!`);
+// }
 
-if (averageDolphinScore > 100 && averageDolphinScore > averageKoalasScore) {
-	console.log(
-		`Dolphin's are the winner and met all requirements of the game! CONGRATULATIONS!`
-	);
-} else if (
-	averageKoalasScore > 100 &&
-	averageKoalasScore > averageDolphinScore
-) {
-	console.log(
-		`Koala's are the winners and have met all the game requirements, CONGRATULATIONS!`
-	);
-} else if (
-	averageDolphinScore === averageKoalasScore &&
-	(averageDolphinScore && averageKoalasScore) > 100
-) {
-	console.log(
-		'Both the teams are winners, Game tied! CONGRATULATIONS TO BOTH!'
-	);
-} else {
-	console.log(
-		`Both teams are losers 😛 because their scores are less than 100`
-	);
-}
+// if (averageDolphinScore > 100 && averageDolphinScore > averageKoalasScore) {
+// 	console.log(
+// 		`Dolphin's are the winner and met all requirements of the game! CONGRATULATIONS!`
+// 	);
+// } else if (
+// 	averageKoalasScore > 100 &&
+// 	averageKoalasScore > averageDolphinScore
+// ) {
+// 	console.log(
+// 		`Koala's are the winners and have met all the game requirements, CONGRATULATIONS!`
+// 	);
+// } else if (
+// 	averageDolphinScore === averageKoalasScore &&
+// 	(averageDolphinScore && averageKoalasScore) > 100
+// ) {
+// 	console.log(
+// 		'Both the teams are winners, Game tied! CONGRATULATIONS TO BOTH!'
+// 	);
+// } else {
+// 	console.log(
+// 		`Both teams are losers 😛 because their scores are less than 100`
+// 	);
+// }
+/////////////////////////////////////////////////////
+///////////////////////CODING CHALLENGE 4////////////////////////////
+// const bill = 400;
+// const bill = 275;
+const bill = 430;
+const tip1 = 0.15;
+const tip2 = 0.2;
+// if (bill > 50 && bill < 300) {
+// 	console.log(`${tip1 * bill}`);
+// } else {
+// 	console.log(`tip = ${tip2 * bill}`);
+// }
+
+bill > 50 && bill < 300
+	? console.log(
+			`The bill was ${bill}, the tip was ${
+				tip1 * bill
+			} and the total bill (bill+tip) is ${bill + tip1 * bill}`
+	  )
+	: console.log(
+			`The bill was ${bill}, the tip was ${
+				tip2 * bill
+			} and the total bill (bill+tip) is ${bill + tip2 * bill}`
+	  );
