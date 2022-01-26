@@ -28,3 +28,24 @@ const jBmi = 92 / 1.95 ** 2;
 
 const markHigherBMI = mBmi > jBmi;
 console.log(markHigherBMI);
+// ////////////////
+
+// console.log('String with \n\
+// multiple \n\
+// lines');
+
+// console.log('hi \n u \n ?');
+
+// console.log(`string
+// multiple
+// lines`);
+////////////////////////////////////
+// if else /////
+// coding challenge 2
+
+if (mBmi > jBmi) {
+	console.log(`Mark's BMI ${mBmi} is greater than John's ${jBmi}`);
+} else {
+	console.log(`John's BMI is greater than Mark's`);
+}
+//
