@@ -176,4 +176,32 @@ const averageKoalasScore = (kScore1 + kScore2 + kScore3) / 3;
 // const age2 = calAge2(1980);
 // console.log(age2);
 
-// ///////////////////////////////////
+// /////////////////////////////////// Arrow Function////////////
+
+// const calcAge3 = (birthYear) => 2022 - birthYear;
+// console.log(calcAge3(1980));
+
+// const yearsUntillRetirement = (birthYear) => {
+// 	const age = 2022 - birthYear;
+// 	const ret = 65 - age;
+// 	return ret;
+// };
+// console.log(yearsUntillRetirement(1980));
+
+///////////////////////////Higher order functions/////////////
+
+// const cutFruitPieces = (fruit) => {
+// 	return fruit * 4;
+// };
+
+// const foodProcessor = (apples, oranges) => {
+// 	const applePieces = cutFruitPieces(apples);
+// 	const orangePieces = cutFruitPieces(oranges);
+
+// 	const juice = `Juice with ${apples} apples and ${applePieces} apples pieces and ${oranges} oranges and ${orangePieces} orange pieces`;
+// 	return juice;
+// };
+
+// console.log(foodProcessor(2, 3));
+
+////////////////////////////////////////////////////////////
