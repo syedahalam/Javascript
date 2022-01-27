@@ -217,26 +217,50 @@ const averageKoalasScore = (kScore1 + kScore2 + kScore3) / 3;
 // console.log(yearsUntilRetirement(1980));
 
 ////////////////////Coding Challenge 1 /////////////////////////
-const calcAverage = (s1, s2, s3) => {
-	return (s1 + s2 + s3) / 3;
-};
-// const avgDolphin = calcAverage(44, 23, 71);
-// const avgKoalas = calcAverage(65, 54, 49);
+// const calcAverage = (s1, s2, s3) => {
+// 	return (s1 + s2 + s3) / 3;
+// };
+// // const avgDolphin = calcAverage(44, 23, 71);
+// // const avgKoalas = calcAverage(65, 54, 49);
 
-//data 2
+// //data 2
 
-const avgDolphin = calcAverage(85, 54, 41);
-const avgKoalas = calcAverage(23, 34, 27);
+// const avgDolphin = calcAverage(85, 54, 41);
+// const avgKoalas = calcAverage(23, 34, 27);
 
-//Check winner
+// //Check winner
 
-const checkWinner = (avgDolphin, avgKoalas) => {
-	if (avgDolphin > avgKoalas * 2) {
-		console.log(`Dolphins win (${avgDolphin} vs ${avgKoalas}.)`);
-	} else if (avgKoalas > avgDolphin * 2) {
-		console.log(`Koalas win (${avgKoalas} vs ${avgDolphin}.)`);
-	} else {
-		console.log('No team wins!');
-	}
-};
-checkWinner(avgDolphin, avgKoalas);
+// const checkWinner = (avgDolphin, avgKoalas) => {
+// 	if (avgDolphin > avgKoalas * 2) {
+// 		console.log(`Dolphins win (${avgDolphin} vs ${avgKoalas}.)`);
+// 	} else if (avgKoalas > avgDolphin * 2) {
+// 		console.log(`Koalas win (${avgKoalas} vs ${avgDolphin}.)`);
+// 	} else {
+// 		console.log('No team wins!');
+// 	}
+// };
+// checkWinner(avgDolphin, avgKoalas);
+//////////////////////////////
+///////////////////Arrays/////////////////////////////
+
+// const calcAge = (birthyear) => 2022 - birthyear;
+
+// const birthYears = [1980, 1967, 2002, 2010, 2018];
+// console.log(calcAge(birthYears[0]));
+
+const friends = ['Maria', 'Azwer', 'Madho', 'Kukkoo'];
+
+////////////////Coding Challenge # 2 -- Arrays ////////////////
+
+const tipCalc = (bill) => (bill > 50 && bill < 300 ? 0.15 * bill : 0.2 * bill);
+
+// tipCalc(100);
+
+const bills = [125, 555, 44];
+const tips = [tipCalc(bills[0]), tipCalc(bills[1]), tipCalc(bills[2])];
+
+// console.log(bills, tips);
+
+const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+console.log(bills, tips, total);
+///////////////////////////////////
