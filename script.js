@@ -262,5 +262,32 @@ const tips = [tipCalc(bills[0]), tipCalc(bills[1]), tipCalc(bills[2])];
 // console.log(bills, tips);
 
 const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
-console.log(bills, tips, total);
+// console.log(bills, tips, total);
 ///////////////////////////////////
+
+/////////////////////////OBJECTS/////////////////////////
+const mana = {
+	firstName: 'Syeda',
+	lastName: 'Alam',
+	job: 'Developer',
+};
+// console.log(humna.firstName);
+// console.log(humna['lastName']);
+// const knowMe = prompt('What do u wanna know? First Name, Last Name or job?');
+// console.log(humna[knowMe]);
+
+// humna.location = 'New Jersey';
+// console.log(humna);
+// humna['kids'] = 3;
+// console.log(humna);
+
+////////////Challenge Objects
+
+const humna = {
+	name: 'Syeda',
+	total: 4,
+	friends: ['Maria', 'Azwer', 'Madho', 'Kukkoo'],
+};
+console.log(
+	`${humna.name} has ${humna.total} friends, and her best friend ia called ${humna.friends[2]}.`
+);
