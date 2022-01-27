@@ -1,3 +1,4 @@
+'use strict';
 // let js = 'amazing';
 // console.log(js);
 // if (js === 'amazing') alert('JS is fun');
@@ -133,23 +134,46 @@ const averageKoalasScore = (kScore1 + kScore2 + kScore3) / 3;
 ///////////////////////CODING CHALLENGE 4////////////////////////////
 // const bill = 400;
 // const bill = 275;
-const bill = 430;
-const tip1 = 0.15;
-const tip2 = 0.2;
-// if (bill > 50 && bill < 300) {
-// 	console.log(`${tip1 * bill}`);
-// } else {
-// 	console.log(`tip = ${tip2 * bill}`);
-// }
+// const bill = 430;
+// const tip1 = 0.15;
+// const tip2 = 0.2;
+// // if (bill > 50 && bill < 300) {
+// // 	console.log(`${tip1 * bill}`);
+// // } else {
+// // 	console.log(`tip = ${tip2 * bill}`);
+// // }
 
-bill > 50 && bill < 300
-	? console.log(
-			`The bill was ${bill}, the tip was ${
-				tip1 * bill
-			} and the total bill (bill+tip) is ${bill + tip1 * bill}`
-	  )
-	: console.log(
-			`The bill was ${bill}, the tip was ${
-				tip2 * bill
-			} and the total bill (bill+tip) is ${bill + tip2 * bill}`
-	  );
+// bill > 50 && bill < 300
+// 	? console.log(
+// 			`The bill was ${bill}, the tip was ${
+// 				tip1 * bill
+// 			} and the total bill (bill+tip) is ${bill + tip1 * bill}`
+// 	  )
+// 	: console.log(
+// 			`The bill was ${bill}, the tip was ${
+// 				tip2 * bill
+// 			} and the total bill (bill+tip) is ${bill + tip2 * bill}`
+// 	  );
+/////////////////////////////////////////////////////////////////
+//checking strict mode
+
+// const interface = 'Audio';
+// const private = 534;
+// const if = 'hi';
+
+/////////////////////////////Functions////////////////////////////
+// function calAge(birthYear) {
+// 	const age = 2022 - birthYear;
+// 	return age;
+// }
+// const yourAge = calAge(1980);
+// console.log(yourAge);
+
+////////////Function Expression
+// const calAge2 = function (birthYear) {
+// 	return 2022 - birthYear;
+// };
+// const age2 = calAge2(1980);
+// console.log(age2);
+
+// ///////////////////////////////////
