@@ -465,22 +465,22 @@ const person = {
 
 ///////////////challenge # 4/////////////////////////
 
-const bills = [22, 295, 176, 440, 37, 105, 105, 10, 1100, 86, 52];
-const tips = [];
-const totals = [];
+// const bills = [22, 295, 176, 440, 37, 105, 105, 10, 1100, 86, 52];
+// const tips = [];
+// const totals = [];
 
-for (let i = 0; i < bills.length; i++) {
-	if (bills[i] >= 5 && bills[i] <= 300) {
-		tips.push(0.15 * bills[i]);
-		totals.push(tips[i] + bills[i]);
-	} else if (bills[i] > 300) {
-		tips.push(0.2 * bills[i]);
-		totals.push(tips[i] + bills[i]);
-	}
+// for (let i = 0; i < bills.length; i++) {
+// 	if (bills[i] >= 5 && bills[i] <= 300) {
+// 		tips.push(0.15 * bills[i]);
+// 		totals.push(tips[i] + bills[i]);
+// 	} else if (bills[i] > 300) {
+// 		tips.push(0.2 * bills[i]);
+// 		totals.push(tips[i] + bills[i]);
+// 	}
 
-	// tips[i] = bills[i];
-	console.log(bills, tips, totals);
-}
+// 	// tips[i] = bills[i];
+// 	console.log(bills, tips, totals);
+// }
 
 // console.log(calcTip(bills[i]));
 // const arr = []
@@ -495,16 +495,20 @@ for (let i = 0; i < bills.length; i++) {
 // 	console.log(`The average is ${average}`);
 // };
 
-let sum = 0;
-let average = 0;
-const calcAverage = (tips) => {
-	for (let i = 0; i < tips.length; i++) {
-		sum += tips[i];
-		average = sum / tips.length;
-	}
-	console.log(`The sum of array is ${sum}`);
-	console.log(`The average is ${average}`);
-};
+// let sum = 0;
+// let average = 0;
+// const calcAverage = (arr) => {
+// 	for (let i = 0; i < arr.length; i++) {
+// 		sum += arr[i];
+// 	}
+// 	// console.log(`The sum of array is ${sum}`);
+// 	return (average = sum / arr.length);
+// 	// console.log(`The average is ${average}`);
+// };
 
-calcAverage(tips);
-calcAverage(totals);
+// // calcAverage([2, 3, 7]);
+// // calcAverage(totals);
+
+// console.log(calcAverage([2, 3, 6]));
+// console.log(calcAverage(tips));
+// console.log(calcAverage(totals));
