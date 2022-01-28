@@ -327,42 +327,111 @@ const person = {
 
 ///////////////Challenge 3///////////////////
 
-const mark = {
-	fullName: 'Mark Miller',
-	mass: 78,
-	height: 1.69,
+// const mark = {
+// 	fullName: 'Mark Miller',
+// 	mass: 78,
+// 	height: 1.69,
 
-	calcBMI: function () {
-		return this.mass / this.height ** 2;
-	},
-};
-console.log(mark.calcBMI());
+// 	calcBMI: function () {
+// 		return this.mass / this.height ** 2;
+// 	},
+// };
+// console.log(mark.calcBMI());
 
-const john = {
-	fullName: 'John Smith',
-	mass: 92,
-	height: 1.95,
+// const john = {
+// 	fullName: 'John Smith',
+// 	mass: 92,
+// 	height: 1.95,
 
-	calcBMI: function () {
-		return this.mass / this.height ** 2;
-	},
-};
-console.log(john.calcBMI());
+// 	calcBMI: function () {
+// 		this.bmi = this.mass / this.height ** 2;
+// 		return this.bmi;
+// 	},
+// };
+// console.log(john.calcBMI());
 
-// console.log(`${mark.calcBMI()`}>`${john.calcBMI()}`?${mark.fullName}'s BMI (${mark.calcBMI()}) is higher than ${mark.fullName}'s (${mark.calcBMI()})`:`${john.fullName}'s BMI (${john.calcBMI()}) is higher than ${john.fullName}'s (${john.calcBMI()})`;
+// // console.log(`${mark.calcBMI()`}>`${john.calcBMI()}`?${mark.fullName}'s BMI (${mark.calcBMI()}) is higher than ${mark.fullName}'s (${mark.calcBMI()})`:`${john.fullName}'s BMI (${john.calcBMI()}) is higher than ${john.fullName}'s (${john.calcBMI()})`;
 
-if (`${mark.calcBMI()}` > `${john.calcBMI()}`) {
-	console.log(
-		`${mark.fullName}'s BMI (${mark.calcBMI()}) is higher than ${
-			john.fullName
-		}'s (${john.calcBMI()})`
-	);
-} else {
-	console.log(
-		`${john.fullName}'s BMI (${john.calcBMI()}) is higher than ${
-			mark.fullName
-		}'s (${mark.calcBMI()})`
-	);
-}
+// if (`${mark.calcBMI()}` > `${john.calcBMI()}`) {
+// 	console.log(
+// 		`${mark.fullName}'s BMI (${mark.calcBMI()}) is higher than ${
+// 			john.fullName
+// 		}'s (${john.calcBMI()})`
+// 	);
+// } else {
+// 	console.log(
+// 		`${john.fullName}'s BMI (${john.calcBMI()}) is higher than ${
+// 			mark.fullName
+// 		}'s (${mark.calcBMI()})`
+// 	);
+// }
 
 ///////////////////completed////////////////
+
+////////////////////////////////////////////FOR LOOP///////////////////////////////
+// for (let i = 1; i <= 10; i++) {
+// 	console.log(`good ${i}`);
+// }
+
+// const humnasArray = [
+// 	'Humna',
+// 	'Alam',
+// 	2022 - 1980,
+// 	'developer',
+// 	['Maria', 'Azwer', 'Madho', 'Kukkoo'],
+// 	true,
+// 	'hi',
+// ];
+
+// const types = [];
+// for (let i = 0; i < humnasArray.length; i++) {
+// 	// console.log(humnasArray[i]);
+// 	types[i] = humnasArray[i];
+
+// 	//both up n down code is same, both gives us array
+
+// 	types.push(humnasArray[i]);
+// }
+// console.log(types);
+
+// const years = [1991, 2012, 1980, 1997];
+// const ages = [];
+
+// for (let i = 0; i < years.length; i++) {
+// 	ages.push(2022 - years[i]);
+// }
+// console.log(ages);
+
+//////////CONTINUE & BREAK//////////////////
+//only print string values
+// for (let i = 0; i < humnasArray.length; i++) {
+// 	// if (typeof humnasArray[i] !== 'string') continue;
+// 	// if (typeof humnasArray[i] !== 'string') break;
+// 	// if (typeof humnasArray[i] === 'number') break;
+// 	if (typeof humnasArray[i] === 'boolean') break;
+// 	console.log(humnasArray[i]);
+// }
+
+/////////////////////////////////////
+// const humna = [
+// 	'Humna',
+// 	'Alam',
+// 	2022 - 1980,
+// 	'developer',
+// 	['Maria', 'Azwer', 'Madho', 'Kukkoo'],
+// 	true,
+// 	'hi',
+// ];
+// const arr = [];
+
+// for (let i = humna.length - 1; i >= 0; i--) {
+// 	console.log(i, [i]);
+// }
+//////////////////////
+// for (let exercise = 1; exercise <= 3; exercise++) {
+// 	console.log(`----------Starting Exercise ${exercise}--------`);
+// 	for (let rep = 1; rep < 6; rep++) {
+// 		console.log(`******lifting weights repetition ${rep}*****`);
+// 	}
+// }
+/////////////////////done for loops////////////
