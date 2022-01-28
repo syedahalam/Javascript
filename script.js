@@ -248,29 +248,27 @@ const averageKoalasScore = (kScore1 + kScore2 + kScore3) / 3;
 // const birthYears = [1980, 1967, 2002, 2010, 2018];
 // console.log(calcAge(birthYears[0]));
 
-const friends = ['Maria', 'Azwer', 'Madho', 'Kukkoo'];
+// const friends = ['Maria', 'Azwer', 'Madho', 'Kukkoo'];
 
 ////////////////Coding Challenge # 2 -- Arrays ////////////////
 
-const tipCalc = (bill) => (bill > 50 && bill < 300 ? 0.15 * bill : 0.2 * bill);
-
 // tipCalc(100);
 
-const bills = [125, 555, 44];
-const tips = [tipCalc(bills[0]), tipCalc(bills[1]), tipCalc(bills[2])];
+// const bills = [125, 555, 44];
+// const tips = [tipCalc(bills[0]), tipCalc(bills[1]), tipCalc(bills[2])];
 
 // console.log(bills, tips);
 
-const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+// const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 // console.log(bills, tips, total);
 ///////////////////////////////////
 
 /////////////////////////OBJECTS/////////////////////////
-const mana = {
-	firstName: 'Syeda',
-	lastName: 'Alam',
-	job: 'Developer',
-};
+// const mana = {
+// 	firstName: 'Syeda',
+// 	lastName: 'Alam',
+// 	job: 'Developer',
+// };
 // console.log(humna.firstName);
 // console.log(humna['lastName']);
 // const knowMe = prompt('What do u wanna know? First Name, Last Name or job?');
@@ -283,11 +281,46 @@ const mana = {
 
 ////////////Challenge Objects
 
-const humna = {
-	name: 'Syeda',
-	total: 4,
-	friends: ['Maria', 'Azwer', 'Madho', 'Kukkoo'],
+// const humna = {
+// 	name: 'Syeda',
+// 	total: 4,
+// 	friends: ['Maria', 'Azwer', 'Madho', 'Kukkoo'],
+// };
+// console.log(
+// 	`${humna.name} has ${humna.friends.length} friends, and her best friend ia called ${humna.friends[2]}.`
+// );
+//////////////////////////////////////////////////////////
+const person = {
+	firstName: 'Syeda',
+	lastName: 'Alam',
+	job: 'Developer',
+	hasDriverLicense: true,
+	birthYear: 1980,
+
+	// calcAge: function (birthYear) {
+	// 	return 2022 - birthYear;
+	// },
+
+	// calcAge: function () {
+	// 	return 2022 - this.birthYear;
+	// },
+
+	calcAge: function () {
+		this.age = 2022 - this.birthYear;
+		return this.age;
+	},
+
+	getSummary: function () {
+		return `${
+			this.firstName
+		} is a ${this.calcAge()}-years old teacher, and she ${
+			this.hasDriverLicense ? 'has' : 'hasnot'
+		} driver's license.`;
+	},
 };
-console.log(
-	`${humna.name} has ${humna.total} friends, and her best friend ia called ${humna.friends[2]}.`
-);
+// console.log(person.calcAge());
+// console.log(person.age);
+
+// console.log(person.getSummary());
+
+////////////////////completed/////////////
