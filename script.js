@@ -571,33 +571,62 @@
 // const koalasScore3 = 123;
 
 //////bonus 2 test data////////
-const dolphinsScore1 = 97;
-const dolphinsScore2 = 112;
-const dolphinsScore3 = 101;
+// const dolphinsScore1 = 97;
+// const dolphinsScore2 = 112;
+// const dolphinsScore3 = 101;
 
-const koalasScore1 = 109;
-const koalasScore2 = 95;
-const koalasScore3 = 106;
+// const koalasScore1 = 109;
+// const koalasScore2 = 95;
+// const koalasScore3 = 106;
 
-const avgDolphins = (dolphinsScore1 + dolphinsScore2 + dolphinsScore3) / 3;
-const avgKoalas = (koalasScore1 + koalasScore2 + koalasScore3) / 3;
+// const avgDolphins = (dolphinsScore1 + dolphinsScore2 + dolphinsScore3) / 3;
+// const avgKoalas = (koalasScore1 + koalasScore2 + koalasScore3) / 3;
 
-console.log(avgDolphins, avgKoalas);
+// console.log(avgDolphins, avgKoalas);
 
-if (avgDolphins > avgKoalas && avgDolphins >= 100) {
-	console.log(
-		`Dolphins with average ${avgDolphins} points won against Koalas with average score of ${avgKoalas} `
-	);
-} else if (avgKoalas > avgDolphins && avgKoalas >= 100) {
-	console.log(
-		`Koalas with average ${avgKoalas} points won against Dolphins with average score of ${avgDolphins} `
-	);
-} else if (
-	avgDolphins === avgKoalas &&
-	avgDolphins >= 100 &&
-	avgKoalas >= 100
-) {
-	console.log(`Match tied with both teams have same scores!`);
-} else {
-	console.log(`There is no winner as scores are less than 100`);
-}
+// if (avgDolphins > avgKoalas && avgDolphins >= 100) {
+// 	console.log(
+// 		`Dolphins with average ${avgDolphins} points won against Koalas with average score of ${avgKoalas} `
+// 	);
+// } else if (avgKoalas > avgDolphins && avgKoalas >= 100) {
+// 	console.log(
+// 		`Koalas with average ${avgKoalas} points won against Dolphins with average score of ${avgDolphins} `
+// 	);
+// } else if (
+// 	avgDolphins === avgKoalas &&
+// 	avgDolphins >= 100 &&
+// 	avgKoalas >= 100
+// ) {
+// 	console.log(`Match tied with both teams have same scores!`);
+// } else {
+// 	console.log(`There is no winner as scores are less than 100`);
+// }
+
+/////////////////////////
+
+// const age = 23;
+// const drink = age >= 18 ? 'coke 🥤' : 'water💧';
+// console.log(`I like to drink ${drink}`);
+
+////////// coding challenge 4///////////
+
+const bill1 = 275;
+const bill2 = 40;
+const bill3 = 430;
+const tip1 = bill1 >= 50 && bill1 <= 300 ? 0.15 * bill1 : 0.2 * bill1;
+const tip2 = bill2 >= 50 && bill2 <= 300 ? 0.15 * bill2 : 0.2 * bill2;
+const tip3 = bill3 >= 50 && bill3 <= 300 ? 0.15 * bill3 : 0.2 * bill3;
+console.log(tip1);
+console.log(
+	`The bill is ${bill1} the tip is ${tip1} and the total is ${bill1 + tip1}`
+);
+
+console.log(tip2);
+console.log(
+	`The bill is ${bill2} the tip is ${tip2} and the total is ${bill2 + tip2}`
+);
+
+console.log(tip3);
+console.log(
+	`The bill is ${bill3} the tip is ${tip3} and the total is ${bill3 + tip3}`
+);
