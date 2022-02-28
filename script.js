@@ -60,15 +60,15 @@
 ////BOOLEAN //////////////////////
 //challenge 3///////////////////////////
 ////TEST DATA
-const dScore1 = 96;
-const dScore2 = 108;
-const dScore3 = 89;
-const averageDolphinScore = (dScore1 + dScore2 + dScore3) / 3;
+// const dScore1 = 96;
+// const dScore2 = 108;
+// const dScore3 = 89;
+// const averageDolphinScore = (dScore1 + dScore2 + dScore3) / 3;
 
-const kScore1 = 88;
-const kScore2 = 91;
-const kScore3 = 110;
-const averageKoalasScore = (kScore1 + kScore2 + kScore3) / 3;
+// const kScore1 = 88;
+// const kScore2 = 91;
+// const kScore3 = 110;
+// const averageKoalasScore = (kScore1 + kScore2 + kScore3) / 3;
 
 //////////////////
 
@@ -290,34 +290,34 @@ const averageKoalasScore = (kScore1 + kScore2 + kScore3) / 3;
 // 	`${humna.name} has ${humna.friends.length} friends, and her best friend ia called ${humna.friends[2]}.`
 // );
 //////////////////////////////////////////////////////////
-const person = {
-	firstName: 'Syeda',
-	lastName: 'Alam',
-	job: 'Developer',
-	hasDriverLicense: true,
-	birthYear: 1980,
+// const person = {
+// 	firstName: 'Syeda',
+// 	lastName: 'Alam',
+// 	job: 'Developer',
+// 	hasDriverLicense: true,
+// 	birthYear: 1980,
 
-	// calcAge: function (birthYear) {
-	// 	return 2022 - birthYear;
-	// },
+// 	// calcAge: function (birthYear) {
+// 	// 	return 2022 - birthYear;
+// 	// },
 
-	// calcAge: function () {
-	// 	return 2022 - this.birthYear;
-	// },
+// 	// calcAge: function () {
+// 	// 	return 2022 - this.birthYear;
+// 	// },
 
-	calcAge: function () {
-		this.age = 2022 - this.birthYear;
-		return this.age;
-	},
+// 	calcAge: function () {
+// 		this.age = 2022 - this.birthYear;
+// 		return this.age;
+// 	},
 
-	getSummary: function () {
-		return `${
-			this.firstName
-		} is a ${this.calcAge()}-years old teacher, and she ${
-			this.hasDriverLicense ? 'has' : 'hasnot'
-		} driver's license.`;
-	},
-};
+// 	getSummary: function () {
+// 		return `${
+// 			this.firstName
+// 		} is a ${this.calcAge()}-years old teacher, and she ${
+// 			this.hasDriverLicense ? 'has' : 'hasnot'
+// 		} driver's license.`;
+// 	},
+// };
 // console.log(person.calcAge());
 // console.log(person.age);
 
@@ -514,11 +514,11 @@ const person = {
 // console.log(calcAverage(totals));
 // feb 28, 2022- section - coding challenge # 1
 
-const markMass = 78;
-const markHeight = 1.69;
+// const markMass = 78;
+// const markHeight = 1.69;
 
-const johnMass = 92;
-const johnHeight = 1.95;
+// const johnMass = 92;
+// const johnHeight = 1.95;
 
 // const markMass = 95;
 // const markHeight = 1.88;
@@ -526,16 +526,78 @@ const johnHeight = 1.95;
 // const johnMass = 85;
 // const johnHeight = 1.76;
 
-const markBMI = markMass / markHeight ** 2;
-const johnBMI = johnMass / johnHeight ** 2;
+// const markBMI = markMass / markHeight ** 2;
+// const johnBMI = johnMass / johnHeight ** 2;
 // console.log(markBMI, johnBMI);
 // const markHigherBMI = markBMI > johnBMI;
 // console.log(markHigherBMI);
 
-// section 1 - coding challenge # 2
+// //////////////////////section 1 - coding challenge # 2
 
-if (markBMI > johnBMI) {
-	console.log(`Mark's BMI ${markBMI} is higher than John's ${johnBMI}!`);
+// if (markBMI > johnBMI) {
+// 	console.log(`Mark's BMI ${markBMI} is higher than John's ${johnBMI}!`);
+// } else {
+// 	console.log(`John's ${johnBMI} BMI is higher than Mark's ${markBMI}!`);
+// }
+////////////////////////////////////////////////////
+// const inputYear = 2022;
+// console.log(Number(inputYear));
+// const second = 18;
+// console.log(`${Number(inputYear) + second}`);
+// console.log('I am ' + 23 + ' years old');
+// console.log('23' - 10);
+// let n = '1' + 1;
+// console.log(n);
+// n = n - 1;
+// console.log(n);
+
+/////////// coding challenge # 3 ////////////////
+
+// const dolphinsScore1 = 96;
+// const dolphinsScore2 = 108;
+// const dolphinsScore3 = 89;
+
+// const koalasScore1 = 88;
+// const koalasScore2 = 91;
+// const koalasScore3 = 110;
+
+//////bonus 1 test data////////
+// const dolphinsScore1 = 97;
+// const dolphinsScore2 = 112;
+// const dolphinsScore3 = 101;
+
+// const koalasScore1 = 109;
+// const koalasScore2 = 95;
+// const koalasScore3 = 123;
+
+//////bonus 2 test data////////
+const dolphinsScore1 = 97;
+const dolphinsScore2 = 112;
+const dolphinsScore3 = 101;
+
+const koalasScore1 = 109;
+const koalasScore2 = 95;
+const koalasScore3 = 106;
+
+const avgDolphins = (dolphinsScore1 + dolphinsScore2 + dolphinsScore3) / 3;
+const avgKoalas = (koalasScore1 + koalasScore2 + koalasScore3) / 3;
+
+console.log(avgDolphins, avgKoalas);
+
+if (avgDolphins > avgKoalas && avgDolphins >= 100) {
+	console.log(
+		`Dolphins with average ${avgDolphins} points won against Koalas with average score of ${avgKoalas} `
+	);
+} else if (avgKoalas > avgDolphins && avgKoalas >= 100) {
+	console.log(
+		`Koalas with average ${avgKoalas} points won against Dolphins with average score of ${avgDolphins} `
+	);
+} else if (
+	avgDolphins === avgKoalas &&
+	avgDolphins >= 100 &&
+	avgKoalas >= 100
+) {
+	console.log(`Match tied with both teams have same scores!`);
 } else {
-	console.log(`John's ${johnBMI} BMI is higher than Mark's ${markBMI}!`);
+	console.log(`There is no winner as scores are less than 100`);
 }
