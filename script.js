@@ -632,14 +632,38 @@
 // );
 
 /////////////////////////////////////
-function fruitProcessor(apples, oranges) {
-	console.log(apples, oranges);
-	const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
-	return juice;
-}
-// console.log(fruitProcessor(2, 3));
-const mmm = fruitProcessor(3, 4);
-console.log(mmm);
+// function fruitProcessor(apples, oranges) {
+// 	console.log(apples, oranges);
+// 	const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
+// 	return juice;
+// }
+// // console.log(fruitProcessor(2, 3));
+// const mmm = fruitProcessor(3, 4);
+// console.log(mmm);
 
-const appleOrangeJuice = fruitProcessor(2, 4);
-console.log(appleOrangeJuice);
+// const appleOrangeJuice = fruitProcessor(2, 4);
+// console.log(appleOrangeJuice);
+
+const age = calcAge(1980);
+console.log(`function declaration`, age);
+
+function calcAge(birthYear) {
+	return 2022 - birthYear;
+}
+
+/////////////////////////////// Function Expression
+const calcAge1 = function (birthYear) {
+	return 2022 - birthYear;
+};
+console.log(`function expression`, calcAge1(1980));
+
+////////////////////////////// Arrow Functon
+const calcAge2 = (birthYear) => 2022 - birthYear;
+console.log(`Arrow function`, calcAge2(1980));
+
+const yearsUntilRetirement = (birthYear, firstName) => {
+	const age3 = 2022 - birthYear;
+	return `${firstName} retires in ${65 - age3} years`;
+};
+const retirementAge = yearsUntilRetirement(1980, 'Syeda');
+console.log(retirementAge);
