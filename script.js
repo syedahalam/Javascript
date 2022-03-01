@@ -644,26 +644,83 @@
 // const appleOrangeJuice = fruitProcessor(2, 4);
 // console.log(appleOrangeJuice);
 
-const age = calcAge(1980);
-console.log(`function declaration`, age);
+// const age = calcAge(1980);
+// console.log(`function declaration`, age);
 
-function calcAge(birthYear) {
-	return 2022 - birthYear;
-}
+// function calcAge(birthYear) {
+// 	return 2022 - birthYear;
+// }
 
-/////////////////////////////// Function Expression
-const calcAge1 = function (birthYear) {
-	return 2022 - birthYear;
-};
-console.log(`function expression`, calcAge1(1980));
+// /////////////////////////////// Function Expression
+// const calcAge1 = function (birthYear) {
+// 	return 2022 - birthYear;
+// };
+// console.log(`function expression`, calcAge1(1980));
 
-////////////////////////////// Arrow Functon
-const calcAge2 = (birthYear) => 2022 - birthYear;
-console.log(`Arrow function`, calcAge2(1980));
+// ////////////////////////////// Arrow Functon
+// const calcAge2 = (birthYear) => 2022 - birthYear;
+// console.log(`Arrow function`, calcAge2(1980));
 
-const yearsUntilRetirement = (birthYear, firstName) => {
-	const age3 = 2022 - birthYear;
-	return `${firstName} retires in ${65 - age3} years`;
-};
-const retirementAge = yearsUntilRetirement(1980, 'Syeda');
-console.log(retirementAge);
+// const yearsUntilRetirement = (birthYear, firstName) => {
+// 	const age3 = 2022 - birthYear;
+// 	return `${firstName} retires in ${65 - age3} years`;
+// };
+// const retirementAge = yearsUntilRetirement(1980, 'Syeda');
+// console.log(retirementAge);
+
+// ///////// call function functions
+
+// function cutFruitPieces(fruit) {
+// 	return fruit * 4;
+// }
+
+// function fruitProcessor(apples, oranges) {
+// 	const applePieces = cutFruitPieces(apples);
+// 	const orangePieces = cutFruitPieces(oranges);
+
+// 	const juice = `Juice with ${applePieces} apple pieces from ${apples} apples and ${orangePieces} orange pieces from ${oranges} oranges.`;
+// 	return juice;
+// }
+// // console.log(fruitProcessor(2, 3));
+// const juice = fruitProcessor(2, 3);
+// console.log(juice);
+
+// const calAge = (birthYear) => 2037 - birthYear;
+
+// const yearsUntilRetirement = (birthYear, firstName) => {
+// 	const age = calAge(2005);
+// 	const retirement = 65 - age;
+// 	if (retirement < 0) return `You are already retired`;
+// 	else return retirement;
+
+// 	// return `${firstName} retires in ${65 - age} years`;
+// };
+// const retirementAge = yearsUntilRetirement(2005, 'Mike');
+// console.log(retirementAge);
+
+// ////////// coding challenge # 1 - section 3
+
+// const calcAverage = (s1, s2, s3) => (s1 + s2 + s3) / 3;
+
+// const dolphins = calcAverage(44, 23, 71);
+// const koalas = calcAverage(65, 54, 49);
+
+// let dolphins = calcAverage(44, 23, 71);
+// let koalas = calcAverage(65, 54, 49);
+// console.log(dolphins, koalas);
+
+// let dolphins = calcAverage(85, 54, 41);
+// let koalas = calcAverage(23, 34, 27);
+
+// const checkWinner = (avgDolphins, avgKoalas) => {
+// 	if (avgDolphins > avgKoalas * 2)
+// 		console.log(`dolphins win (${avgDolphins} vs. ${avgKoalas})`);
+// 	else if (avgKoalas > avgKoalas * 2)
+// 		console.log(`koalas wins (${avgKoalas} vs ${avgDolphins})`);
+// 	else {
+// 		console.log(`no one won`);
+// 	}
+// };
+// checkWinner(dolphins, koalas);
+// checkWinner(222, 55);
+/////////////////////
