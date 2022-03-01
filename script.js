@@ -610,23 +610,36 @@
 
 ////////// coding challenge 4///////////
 
-const bill1 = 275;
-const bill2 = 40;
-const bill3 = 430;
-const tip1 = bill1 >= 50 && bill1 <= 300 ? 0.15 * bill1 : 0.2 * bill1;
-const tip2 = bill2 >= 50 && bill2 <= 300 ? 0.15 * bill2 : 0.2 * bill2;
-const tip3 = bill3 >= 50 && bill3 <= 300 ? 0.15 * bill3 : 0.2 * bill3;
-console.log(tip1);
-console.log(
-	`The bill is ${bill1} the tip is ${tip1} and the total is ${bill1 + tip1}`
-);
+// const bill1 = 275;
+// const bill2 = 40;
+// const bill3 = 430;
+// const tip1 = bill1 >= 50 && bill1 <= 300 ? 0.15 * bill1 : 0.2 * bill1;
+// const tip2 = bill2 >= 50 && bill2 <= 300 ? 0.15 * bill2 : 0.2 * bill2;
+// const tip3 = bill3 >= 50 && bill3 <= 300 ? 0.15 * bill3 : 0.2 * bill3;
+// console.log(tip1);
+// console.log(
+// 	`The bill is ${bill1} the tip is ${tip1} and the total is ${bill1 + tip1}`
+// );
 
-console.log(tip2);
-console.log(
-	`The bill is ${bill2} the tip is ${tip2} and the total is ${bill2 + tip2}`
-);
+// console.log(tip2);
+// console.log(
+// 	`The bill is ${bill2} the tip is ${tip2} and the total is ${bill2 + tip2}`
+// );
 
-console.log(tip3);
-console.log(
-	`The bill is ${bill3} the tip is ${tip3} and the total is ${bill3 + tip3}`
-);
+// console.log(tip3);
+// console.log(
+// 	`The bill is ${bill3} the tip is ${tip3} and the total is ${bill3 + tip3}`
+// );
+
+/////////////////////////////////////
+function fruitProcessor(apples, oranges) {
+	console.log(apples, oranges);
+	const juice = `Juice with ${apples} apples and ${oranges} oranges.`;
+	return juice;
+}
+// console.log(fruitProcessor(2, 3));
+const mmm = fruitProcessor(3, 4);
+console.log(mmm);
+
+const appleOrangeJuice = fruitProcessor(2, 4);
+console.log(appleOrangeJuice);
