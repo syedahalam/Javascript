@@ -724,3 +724,78 @@
 // checkWinner(dolphins, koalas);
 // checkWinner(222, 55);
 /////////////////////
+
+////////// Arrays //////////////////
+
+// const friends = ['Maya', 'Azwer', 'Madho', 'Kukkoo'];
+// console.log(friends);
+// console.log(friends[0]);
+// console.log(friends[friends.length - 1]);
+// friends[1] = 'Atra';
+// console.log(friends);
+// const foes = new Array(1, 2, 3, 4);
+// console.log(foes);
+
+// const firstName = 'Humna';
+// const humna = [firstName, 'Alam', 2022 - 1980, 'developer', friends];
+// // console.log(humna);
+
+// // exercise
+
+// const calAge = (birthYear) => 2037 - birthYear;
+
+// const years = [1990, 1967, 2002, 2010, 2018];
+
+// const age1 = calAge(years[0]);
+// const age2 = calAge(years[1]);
+// const age3 = calAge(years[2]);
+// const age4 = calAge(years[3]);
+// const age5 = calAge(years[years.length - 1]);
+
+// // console.log(age1, age2, age3);
+
+// const ages = [calAge(years[0]), calAge(years[1]), calAge(years[2])];
+// console.log(ages);
+
+//////// Array operations -- array methods ////////////
+
+const friends = ['Maya', 'Azwer', 'Madho', 'Kukkoo'];
+friends.push('Kiran');
+// console.log(friends);
+
+friends.unshift('Mamma');
+// console.log(friends);
+
+friends.pop();
+// console.log(friends);
+
+friends.shift();
+// console.log(friends);
+// console.log(friends.includes('john'));
+// console.log(friends.includes('Maya'));
+// console.log(friends.includes('maya'));
+
+////////// challenge # 2 arrays ///////////
+
+const tip = (bill) => (bill >= 50 && bill <= 300 ? 0.15 * bill : 0.2 * bill);
+console.log(tip(125));
+
+const calcTip = (bill) => {
+	// const tip = bill >= 50 && bill <= 300 ? 0.15 * bill : 0.2 * bill;
+	const total = tip(bill) + bill;
+	console.log(`Total is $${total}, $${bill} Bill plus $${tip(bill)} tip`);
+};
+calcTip(125);
+calcTip(555);
+calcTip(44);
+
+const bills = [125, 555, 44];
+const tips = [tip(bills[0]), tip(bills[1]), tip(bills[2])];
+console.log(tips);
+
+const total = [
+	bills[0] + tip(bills[0]),
+	bills[1] + tip(bills[1]),
+	bills[2] + tip(bills[2]),
+];
+console.log(total);
