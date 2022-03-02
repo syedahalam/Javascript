@@ -835,22 +835,44 @@
 // );
 
 ///////////// objects methods //////////////
-const humna = {
-	firstName: 'Humna',
-	lastName: 'Alam',
-	birthYear: 1980,
-	job: 'Developer',
-	friends: ['Maya', 'Azwer', 'Madho', 'Kukkoo'],
-	hasDriverLicense: true,
+// const humna = {
+// 	firstName: 'Humna',
+// 	lastName: 'Alam',
+// 	birthYear: 1980,
+// 	job: 'Developer',
+// 	friends: ['Maya', 'Azwer', 'Madho', 'Kukkoo'],
+// 	hasDriverLicense: false,
 
-	// calcAge: function (birthYear) {
-	// 	return 2022 - birthYear;
-	// },
+// calcAge: function (birthYear) {
+// 	return 2022 - birthYear;
+// },
 
-	calcAge: function () {
-		return 2022 - this.birthYear;
-	},
-};
+// calcAge: function () {
+// 	return 2022 - this.birthYear;
+// },
 
-console.log(humna.calcAge());
-// console.log(humna['calcAge'](1980));
+// 	calcAge: function () {
+// 		this.age = 2022 - this.birthYear;
+
+// 		return this.age;
+// 	},
+
+// 	getSumary: function () {
+// 		this.summary = `${this.firstName} is a ${this.calcAge()}-years old ${
+// 			this.job
+// 		} and she ${
+// 			this.hasDriverLicense ? `has driver's license` : `not a drivers license`
+// 		}`;
+// 		return this.summary;
+// 	},
+// };
+
+// // console.log(humna['calcAge'](1980));
+// console.log(humna.calcAge());
+// console.log(humna.getSumary());
+
+// console.log(humna.age);
+// console.log(humna.age);
+// console.log(humna.age);
+
+// console.log(`${humna.firstName} is a ${calcAge()}`);
