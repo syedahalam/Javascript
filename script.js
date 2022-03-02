@@ -913,3 +913,76 @@
 // );
 
 ///////////////loops///////////
+// console.log(`Lifting weights repetition 1 🏋️‍♀️`);
+// console.log(`Lifting weights repetition 2 🏋️‍♀️`);
+// console.log(`Lifting weights repetition 3 🏋️‍♀️`);
+// console.log(`Lifting weights repetition 4 🏋️‍♀️`);
+// console.log(`Lifting weights repetition 5 🏋️‍♀️`);
+// console.log(`Lifting weights repetition 6 🏋️‍♀️`);
+// console.log(`Lifting weights repetition 7 🏋️‍♀️`);
+// console.log(`Lifting weights repetition 8 🏋️‍♀️`);
+// console.log(`Lifting weights repetition 9 🏋️‍♀️`);
+// console.log(`Lifting weights repetition 10 🏋️‍♀️`);
+// console.log(`------------------------- loops started--------------`);
+
+// for (let rep = 1; rep < 11; rep++)
+// 	console.log(`Lifting weights repetition ${rep}🏋️‍♀️`);
+
+// const humnasArray = [
+// 	'Syeda',
+// 	'Alam',
+// 	2022 - 1980,
+// 	'Developer',
+// 	['Maya', 'Azwer', 'Madho', 'Kukkoo'],
+// ];
+// const types = [];
+// for (let i = 0; i < humnasArray.length; i++) {
+// 	types.push(humnasArray[i]);
+// 	// console.log(humnasArray[i]);
+// 	console.log(types, typeof types[i]);
+// }
+
+// const years = [1991, 2007, 1969, 2020];
+// const ages = [];
+// for (let i = 0; i < years.length; i++) {
+// 	ages.push(2022 - years[i]);
+// }
+// console.log(ages);
+
+// console.log(`----------only strings----------`);
+// for (let i = 0; i < humnasArray.length; i++) {
+// 	if (typeof humnasArray[i] !== 'string') continue;
+
+// 	console.log(humnasArray[i], typeof humnasArray[i]);
+// }
+// console.log(`-----------break with number---------`);
+// for (let i = 0; i < humnasArray.length; i++) {
+// 	if (typeof humnasArray[i] === 'number') break;
+
+// 	console.log(humnasArray[i], typeof humnasArray[i]);
+// }
+
+//////// backward loop //////////
+
+// const humnasArray = [
+// 	'Syeda',
+// 	'Alam',
+// 	2022 - 1980,
+// 	'Developer',
+// 	['Maya', 'Azwer', 'Madho', 'Kukkoo'],
+// ];
+// for (let i = humnasArray.length - 1; i >= 0; i--) console.log(humnasArray[i]);
+
+// for (let exercise = 1; exercise < 4; exercise++)
+// 	console.log(`------------starting exercise ${exercise} 🏋️‍♀️-----------`);
+// {
+// 	for (let rep = 1; rep < 4; rep++)
+// 		console.log(`---------------starting repetition ${rep}------------`);
+// }
+
+// for (let exercise = 1; exercise < 4; exercise++) {
+// 	console.log(`------------starting exercise ${exercise} 🏋️‍♀️-----------`);
+// 	for (let rep = 1; rep < 4; rep++) {
+// 		console.log(`---------------starting repetition ${rep}------------`);
+// 	}
+// }
