@@ -759,17 +759,17 @@
 
 //////// Array operations -- array methods ////////////
 
-const friends = ['Maya', 'Azwer', 'Madho', 'Kukkoo'];
-friends.push('Kiran');
+// const friends = ['Maya', 'Azwer', 'Madho', 'Kukkoo'];
+// friends.push('Kiran');
 // console.log(friends);
 
-friends.unshift('Mamma');
+// friends.unshift('Mamma');
 // console.log(friends);
 
-friends.pop();
+// friends.pop();
 // console.log(friends);
 
-friends.shift();
+// friends.shift();
 // console.log(friends);
 // console.log(friends.includes('john'));
 // console.log(friends.includes('Maya'));
@@ -777,25 +777,80 @@ friends.shift();
 
 ////////// challenge # 2 arrays ///////////
 
-const tip = (bill) => (bill >= 50 && bill <= 300 ? 0.15 * bill : 0.2 * bill);
-console.log(tip(125));
+// const tip = (bill) => (bill >= 50 && bill <= 300 ? 0.15 * bill : 0.2 * bill);
+// console.log(tip(125));
 
-const calcTip = (bill) => {
-	// const tip = bill >= 50 && bill <= 300 ? 0.15 * bill : 0.2 * bill;
-	const total = tip(bill) + bill;
-	console.log(`Total is $${total}, $${bill} Bill plus $${tip(bill)} tip`);
+// const calcTip = (bill) => {
+// 	// const tip = bill >= 50 && bill <= 300 ? 0.15 * bill : 0.2 * bill;
+// 	const total = tip(bill) + bill;
+// 	console.log(`Total is $${total}, $${bill} Bill plus $${tip(bill)} tip`);
+// };
+// calcTip(125);
+// calcTip(555);
+// calcTip(44);
+
+// const bills = [125, 555, 44];
+// const tips = [tip(bills[0]), tip(bills[1]), tip(bills[2])];
+// console.log(tips);
+
+// const total = [
+// 	bills[0] + tip(bills[0]),
+// 	bills[1] + tip(bills[1]),
+// 	bills[2] + tip(bills[2]),
+// ];
+// console.log(total);
+
+/////////////////////////////////// Objects ///////////
+
+// const humna = {
+// 	firstName: 'Humna',
+// 	lastName: 'Alam',
+// 	birthYear: 2022 - 1980,
+// 	job: 'Developer',
+// 	friends: ['Maya', 'Azwer', 'Madho', 'Kukkoo'],
+// };
+// console.log(humna);
+// console.log(humna.firstName);
+// console.log(humna['firstName']);
+
+// const nameKey = 'Name';
+// console.log(humna['last' + nameKey]);
+
+// const interestedIn = prompt(
+// 	'What do you know about Humna? Choose between firstName, lastName, job, birthYear and friends?'
+// );
+
+// if (humna[interestedIn]) console.log(humna[interestedIn]);
+// else
+// 	console.log(
+// 		'Wrong request, Choose between firstName, lastName, job, birthYear and friends?'
+// 	);
+
+// humna.firstName = 'Syeda';
+// humna['firstName'] = 'Syeda';
+// console.log(humna);
+
+// console.log(
+// 	`"${humna.firstName} has ${humna.friends.length} friends, and her best friend is called ${humna.friends[2]}."`
+// );
+
+///////////// objects methods //////////////
+const humna = {
+	firstName: 'Humna',
+	lastName: 'Alam',
+	birthYear: 1980,
+	job: 'Developer',
+	friends: ['Maya', 'Azwer', 'Madho', 'Kukkoo'],
+	hasDriverLicense: true,
+
+	// calcAge: function (birthYear) {
+	// 	return 2022 - birthYear;
+	// },
+
+	calcAge: function () {
+		return 2022 - this.birthYear;
+	},
 };
-calcTip(125);
-calcTip(555);
-calcTip(44);
 
-const bills = [125, 555, 44];
-const tips = [tip(bills[0]), tip(bills[1]), tip(bills[2])];
-console.log(tips);
-
-const total = [
-	bills[0] + tip(bills[0]),
-	bills[1] + tip(bills[1]),
-	bills[2] + tip(bills[2]),
-];
-console.log(total);
+console.log(humna.calcAge());
+// console.log(humna['calcAge'](1980));
