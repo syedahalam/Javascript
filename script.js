@@ -986,3 +986,30 @@
 // 		console.log(`---------------starting repetition ${rep}------------`);
 // 	}
 // }
+
+/////////// while loop ////////////
+// let rep = 1;
+// while (rep <= 10) {
+// 	console.log(`Lifting weights repetition ${rep}🏋️‍♀️`);
+// 	rep++;
+// }
+// let dice = Math.trunc(Math.random() * 6 + 1);
+// // console.log(dice);
+// while (dice !== 6) {
+// 	console.log(`You rolled ${dice}`);
+// 	dice = Math.trunc(Math.random() * 6 + 1);
+// 	if (dice === 6) console.log(`loop is about to end`);
+// }
+
+// const humnasArray = [
+// 	'Syeda',
+// 	'Alam',
+// 	2022 - 1980,
+// 	'Developer',
+// 	['Maya', 'Azwer', 'Madho', 'Kukkoo'],
+// ];
+// for (let i = humnasArray.length - 1; i >= 0; i--) console.log(humnasArray[i]);
+
+// const add = [1, 2, 3, 4, 5];
+// for (let i = 0; i < add.length; i++) console.log(add[i]);
+// for (let j = add.length - 1; j >= 0; j--) console.log(add[j]);
