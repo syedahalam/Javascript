@@ -1013,3 +1013,57 @@
 // const add = [1, 2, 3, 4, 5];
 // for (let i = 0; i < add.length; i++) console.log(add[i]);
 // for (let j = add.length - 1; j >= 0; j--) console.log(add[j]);
+
+// for (let exercise = 1; exercise <= 4; exercise++) {
+// 	console.log(`----------- starting exercise ${exercise}-----------`);
+
+// 	for (let rep = 1; rep < 3; rep++)
+// 		console.log(`lifting weight repetition ${rep}`);
+// }
+
+// for (let rep = 1; rep < 11; rep++)
+// 	console.log(`Lifting weights repetition ${rep}🏋️‍♀️`);
+
+// let rep = 1;
+// while (rep <= 10) {
+// 	console.log(`Lifting weights repetition with while loop ${rep}🏋️‍♀️`);
+// 	rep++;
+// }
+
+// let dice = Math.trunc(Math.random() * 6) + 1;
+// while (dice !== 6) {
+// 	console.log(`u rolled dice ${dice}`);
+// 	dice = Math.trunc(Math.random() * 6) + 1;
+// 	if (dice === 6) console.log(`loop is about to end`);
+// }
+
+// challenge 4
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86];
+
+// console.log(bills.reduce((a, b) => a + b, 0));
+// console.log(bills.length);
+const tips = [];
+const totals = [];
+
+const calcTip = (bill) => {
+	return bill >= 50 && bill <= 300 ? 0.15 * bill : 0.2 * bill;
+};
+
+for (let i = 0; i < bills.length; i++) {
+	const tip = calcTip(bills[i]);
+	tips.push(tip);
+
+	const total = tips[i] + bills[i];
+	totals.push(total);
+}
+console.log(bills, tips, totals);
+
+const calcAverage = (arr) => {
+	const total = arr.reduce((a, b) => a + b, 0);
+	const avg = total / arr.length;
+	console.log(total);
+	console.log(avg);
+};
+calcAverage(bills);
+// calcAverage([1, 2, 3]);
