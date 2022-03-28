@@ -1070,7 +1070,7 @@
 // calcAverage(tips);
 // calcAverage(totals);
 
-const temperature = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
+// const temperature = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
 //A-understanding the problem
 
 //1- what is the temp amplitude
@@ -1084,21 +1084,21 @@ const temperature = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
 //3- Find min value
 //4- subtracting min from max-amplitude
 
-const calcTemp = (temps) => {
-	let max = temps[0];
-	let min = temps[0];
+// const calcTemp = (temps) => {
+// 	let max = temps[0];
+// 	let min = temps[0];
 
-	for (let i = 1; i < temps.length; i++) {
-		const curTemp = temps[i];
+// 	for (let i = 1; i < temps.length; i++) {
+// 		const curTemp = temps[i];
 
-		if (typeof curTemp !== 'number') continue;
+// 		if (typeof curTemp !== 'number') continue;
 
-		if (curTemp > max) max = curTemp;
-		if (curTemp < min) min = curTemp;
-	}
-	console.log(max, min);
-	return max - min;
-};
+// 		if (curTemp > max) max = curTemp;
+// 		if (curTemp < min) min = curTemp;
+// 	}
+// 	console.log(max, min);
+// 	return max - min;
+// };
 // calcTemp([1, 2, 3, -2, 25]);
 // const amplitude = calcTemp(temperature);
 // console.log(amplitude);
@@ -1106,24 +1106,103 @@ const calcTemp = (temps) => {
 // Problem - Function should recieve two arrays
 // how to merger 2 arrays
 
-const calcTemp1 = (t1, t2) => {
-	const temps = t1.concat(t2);
-	console.log(temps);
+// const calcTemp1 = (t1, t2) => {
+// 	const temps = t1.concat(t2);
+// 	console.log(temps);
 
-	let max = temps[0];
-	let min = temps[0];
+// 	let max = temps[0];
+// 	let min = temps[0];
 
-	for (let i = 1; i < temps.length; i++) {
-		const curTemp = temps[i];
+// 	for (let i = 1; i < temps.length; i++) {
+// 		const curTemp = temps[i];
 
-		if (typeof curTemp !== 'number') continue;
+// 		if (typeof curTemp !== 'number') continue;
 
-		if (curTemp > max) max = curTemp;
-		if (curTemp < min) min = curTemp;
-	}
-	console.log(max, min);
-	return max - min;
-};
-const amplitude1 = calcTemp1([3, 5, 1], [9, 0, 5]);
+// 		if (curTemp > max) max = curTemp;
+// 		if (curTemp < min) min = curTemp;
+// 	}
+// 	console.log(max, min);
+// 	return max - min;
+// };
+// const amplitude1 = calcTemp1([3, 5, 1], [9, 0, 5]);
 // const amplitude1 = calcTemp(temperature);
-console.log(amplitude1);
+// console.log(amplitude1);
+
+//debugging
+
+// const measureKelvin = () => {
+// 	const measurement = {
+// 		type: 'temp',
+// 		unit: 'c',
+// 		//fix
+// 		// value: Number(prompt('Degrees Celsius')),
+// 		value: 10,
+// 	};
+// 	console.log(measurement);
+// 	console.table(measurement);
+
+// find the bug
+// console.log(measurement.value);
+// console.warn(measurement.value);
+// console.error(measurement.value);
+// 	const kelvin = measurement.value + 273;
+// 	return kelvin;
+// };
+// console.log(measureKelvin());
+
+// using a debugger
+// const calcTempBug = (t1, t2) => {
+// 	const temps = t1.concat(t2);
+// 	console.log(temps);
+
+// 	let max = 0;
+// 	let min = 0;
+
+// 	for (let i = 0; i < temps.length; i++) {
+// 		const curTemp = temps[i];
+
+// 		if (typeof curTemp !== 'number') continue;
+
+// 		if (curTemp > max) max = curTemp;
+// 		if (curTemp < min) min = curTemp;
+// 	}
+// 	console.log(max, min);
+// 	return max - min;
+// };
+// const amplitudeBug = calcTempBug([3, 5, 1], [9, 4, 5]);
+// identify
+// console.log(amplitudeBug);
+
+//challenge # 1
+
+// understand the problem
+// array is transfered to string
+// what is day? answer index+1
+//break into sub problems
+// transform array to string
+// transform each element to string
+//strings need to contain day (index+1)
+// add ... between elements and start and end of string
+
+const data1 = [17, 21, 23];
+const data2 = [12, 5, -5, 0, 4];
+
+// const printForcast = (arr) => {
+// 	let str = '';
+// 	for (let i = 0; i < arr.length; i++) {
+// 		str += `...${arr[i]}C in ${i + 1} days`;
+// 	}
+// 	console.log(str + '...');
+// };
+
+const printForcast = (arr) => {
+	let str = '';
+	for (let i = 0; i < arr.length; i++) {
+		str += `${arr[i]}C in ${i + 1} days ... `;
+	}
+	console.log('...' + str);
+};
+// printForcast(data1);
+// printForcast(data2);
+
+//
