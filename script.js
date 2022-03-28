@@ -1039,31 +1039,91 @@
 
 // challenge 4
 
-const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86];
+// const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86];
 
 // console.log(bills.reduce((a, b) => a + b, 0));
 // console.log(bills.length);
-const tips = [];
-const totals = [];
+// const tips = [];
+// const totals = [];
 
-const calcTip = (bill) => {
-	return bill >= 50 && bill <= 300 ? 0.15 * bill : 0.2 * bill;
-};
+// const calcTip = (bill) => {
+// 	return bill >= 50 && bill <= 300 ? 0.15 * bill : 0.2 * bill;
+// };
 
-for (let i = 0; i < bills.length; i++) {
-	const tip = calcTip(bills[i]);
-	tips.push(tip);
+// for (let i = 0; i < bills.length; i++) {
+// 	const tip = calcTip(bills[i]);
+// 	tips.push(tip);
 
-	const total = tips[i] + bills[i];
-	totals.push(total);
-}
-console.log(bills, tips, totals);
+// 	const total = tips[i] + bills[i];
+// 	totals.push(total);
+// }
+// console.log(bills, tips, totals);
 
-const calcAverage = (arr) => {
-	const total = arr.reduce((a, b) => a + b, 0);
-	const avg = total / arr.length;
-	console.log(total);
-	console.log(avg);
-};
-calcAverage(bills);
+// const calcAverage = (arr) => {
+// 	const total = arr.reduce((a, b) => a + b, 0);
+// 	const avg = total / arr.length;
+// 	console.log(total);
+// 	console.log(avg);
+// };
+// calcAverage(bills);
 // calcAverage([1, 2, 3]);
+// calcAverage(tips);
+// calcAverage(totals);
+
+const temperature = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
+//A-understanding the problem
+
+//1- what is the temp amplitude
+//ans: diff b/w highest and lowest temp
+//2- how do we compute max n min value
+//3- what the sensor error and what do we do to solve it?
+
+//B- Breaking the problem into smaller parts
+//1- how to ignore error?
+//2- Find max value
+//3- Find min value
+//4- subtracting min from max-amplitude
+
+const calcTemp = (temps) => {
+	let max = temps[0];
+	let min = temps[0];
+
+	for (let i = 1; i < temps.length; i++) {
+		const curTemp = temps[i];
+
+		if (typeof curTemp !== 'number') continue;
+
+		if (curTemp > max) max = curTemp;
+		if (curTemp < min) min = curTemp;
+	}
+	console.log(max, min);
+	return max - min;
+};
+// calcTemp([1, 2, 3, -2, 25]);
+// const amplitude = calcTemp(temperature);
+// console.log(amplitude);
+
+// Problem - Function should recieve two arrays
+// how to merger 2 arrays
+
+const calcTemp1 = (t1, t2) => {
+	const temps = t1.concat(t2);
+	console.log(temps);
+
+	let max = temps[0];
+	let min = temps[0];
+
+	for (let i = 1; i < temps.length; i++) {
+		const curTemp = temps[i];
+
+		if (typeof curTemp !== 'number') continue;
+
+		if (curTemp > max) max = curTemp;
+		if (curTemp < min) min = curTemp;
+	}
+	console.log(max, min);
+	return max - min;
+};
+const amplitude1 = calcTemp1([3, 5, 1], [9, 0, 5]);
+// const amplitude1 = calcTemp(temperature);
+console.log(amplitude1);
