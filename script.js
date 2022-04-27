@@ -42,6 +42,50 @@ const restaurant = {
 	},
 };
 
+// Object properties
+// const properties = Object.keys(restaurant.openingHours);
+// console.log(properties);
+// let openStr = `We are open ${properties.length} days: `;
+
+// for (const day of properties) {
+// 	openStr += `${day}, `;
+// }
+// console.log(openStr);
+
+// const values = Object.values(restaurant.openingHours);
+// console.log(values);
+
+// const entries = Object.entries(restaurant.openingHours);
+// console.log(entries);
+
+// for (const [key, { open, close }] of entries)
+// 	console.log(`On ${key} we open at ${open} and close at ${close}`);
+
+// methods to be checked if exist or not?
+// console.log(restaurant.order?.(0, 1) ?? 'Method does not exists');
+
+// arrays
+// const users = [
+// 	{
+// 		name: 'humna',
+// 		email: 'huhuh@khk.com',
+// 	},
+// ];
+// console.log(users[0]?.name ?? 'not present');
+// if (restaurant.openingHours.mon) console.log(restaurant.openingHours.mon.open);
+
+// with optional chaining
+// console.log(restaurant.openingHours.mon?.open);
+// console.log(restaurant.openingHours?.mon?.open);
+
+// example:
+// const days = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
+// for (const open of days) {
+// 	console.log(open);
+// 	const opens = restaurant.openingHours[open]?.open ?? 'closed';
+// 	console.log(`On ${open}, we open at ${opens}`);
+// }
+
 // const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
 // console.log(menu);
 
@@ -218,7 +262,7 @@ const restaurant = {
 // const [p = 1, q = 1, r = 1] = [8, 9];
 // console.log(p, q, r);
 
-// ////////// challenge #1 /////////////////
+// ////////// coding challenges /////////////////
 
 const game = {
 	team1: 'Bayern Munich',
@@ -260,6 +304,28 @@ const game = {
 		team2: 6.5,
 	},
 };
+
+// /////////// coding challenge # 2////////////
+// 1
+// for (const [index, player] of game.scored.entries()) {
+// 	console.log(`Goal ${index + 1}: ${player}`);
+// }
+
+// 2
+const val = Object.values(game.odds);
+// console.log(val);
+let sum = 0;
+for (const odd of val) {
+	sum += odd;
+}
+console.log(sum / val.length);
+
+// const days = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
+// for (const [index, day] of days.entries()) {
+// 	console.log(`We are open for ${index + 1} and ${day} `);
+// }
+
+// /////////// coding challenge # 1////////////
 // (1)
 // const [players1, players2] = game.players;
 // console.log(players1, players2);
