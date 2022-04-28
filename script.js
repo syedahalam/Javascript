@@ -42,6 +42,118 @@ const restaurant = {
 	},
 };
 
+// map iteration
+// const question = new Map([
+// 	['question', 'What is the best programming language in the world?'],
+// 	[1, 'C'],
+// 	[2, 'Java'],
+// 	[3, 'Javascript'],
+// 	['correct', 3],
+// 	[true, 'Correct!'],
+// 	[false, 'Try Again!'],
+// ]);
+
+// convert map to array
+// console.log(question);
+
+// convert Object to map
+// console.log(Object.entries(restaurant.openingHours));
+// const hoursMap = new Map(Object.entries(restaurant.openingHours));
+// console.log(hoursMap);
+
+// quiz app
+// console.log(question.get('question'));
+// for (const [key, value] of question) {
+// 	if (typeof key === 'number') console.log(`Answer ${key}: ${value}`);
+// }
+// const answer = Number(prompt('Your answer'));
+// const answer = 3;
+// console.log(answer);
+
+// console.log(question.get(question.get('correct') === answer));
+// console.log(...question);
+// console.log(question.entries());
+// console.log(question.keys());
+// console.log(question.values());
+
+// sibling app
+// const whoIsOlder = new Map([
+// 	[1, 'Aamina'],
+// 	[2, 'Yahyaa'],
+// 	[3, 'Omer'],
+// 	['correct', 1],
+// 	[true, 'Correct'],
+// 	[false, 'Try Again!'],
+// ]);
+// console.log(whoIsOlder);
+// const questionOlder = 'Who is older in siblings?';
+// console.log(questionOlder);
+// const answerOlder = Number(
+// 	prompt('"1" for Aamina, "2" for Yahyaa, "3" for Omer')
+// );
+// console.log(answerOlder);
+// console.log(whoIsOlder.get(whoIsOlder.get('correct') === answerOlder));
+// map
+// const rest = new Map();
+// rest.set('name', 'Classicano Italiano');
+// console.log(rest);
+// rest.set(1, 'Firenze, Italy');
+// rest.set(2, 'Lisbon, Portugal');
+// console.log(rest);
+
+// rest
+// 	.set('categories', ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'])
+// 	.set('open', 11)
+// 	.set('close', 23)
+// 	.set(true, 'We are open :D')
+// 	.set(false, 'We are close :(');
+
+// console.log(rest.get('name'));
+// console.log(rest.get(true));
+// console.log(rest.get(1));
+
+// const time = 21;
+// console.log(rest.get(time > rest.get('open') && time < rest.get('close')));
+
+// console.log(rest.has('categories'));
+// rest.delete(2);
+// console.log(rest);
+// console.log(rest.size);
+// rest.clear();
+// const arr = [1, 2];
+// rest.set(arr, 'Test');
+// rest.set(document.querySelector('h1'), 'heading');
+// console.log(rest);
+// console.log(rest.get(arr));
+// sets
+// const orderSet = new Set([
+// 	'Pasta',
+// 	'Pizza',
+// 	'Rissoto',
+// 	'Pasta',
+// 	'Pizza',
+// 	'Pasta',
+// ]);
+// console.log(orderSet);
+// console.log(new Set('humnaam').size);
+
+// console.log(orderSet.size);
+// console.log(orderSet.has('Pizza'));
+// console.log(orderSet.has('pizza'));
+// orderSet.add('Garlic Bread');
+// console.log(orderSet);
+// orderSet.delete('Pizza');
+// console.log(orderSet);
+
+// for (const order of orderSet) console.log(order);
+
+// const staff = ['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter'];
+// const staffUnique = [...new Set(staff)];
+// console.log(staffUnique);
+// console.log(
+// 	new Set(['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter']).size
+// );
+
 // Object properties
 // const properties = Object.keys(restaurant.openingHours);
 // console.log(properties);
@@ -305,25 +417,33 @@ const game = {
 	},
 };
 
+// mapping
+// const rest = new Map();
+// rest.set('name', 'Classico Italiano');
+// rest.set(1, 'Firenze, Italy');
+// rest.set(2, 'Lisbon, Portugal');
+// console.log(rest);
+
 // /////////// coding challenge # 2////////////
-// 1
+///////////////// 1
 // for (const [index, player] of game.scored.entries()) {
 // 	console.log(`Goal ${index + 1}: ${player}`);
 // }
 
-// 2
+//////////////// 2
 const val = Object.values(game.odds);
-// console.log(val);
-let sum = 0;
-for (const odd of val) {
-	sum += odd;
-}
-console.log(sum / val.length);
-
-// const days = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
-// for (const [index, day] of days.entries()) {
-// 	console.log(`We are open for ${index + 1} and ${day} `);
+// // console.log(val);
+// let sum = 0;
+// for (const odd of val) {
+// 	sum += odd;
 // }
+// console.log(sum / val.length);
+
+// ///////////// 3
+
+// console.log(odd);
+// console.log(game.odds);
+// console.log(`Odd of victory ${game.team1}: `);
 
 // /////////// coding challenge # 1////////////
 // (1)
