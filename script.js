@@ -2,45 +2,142 @@
 
 // ///////////// Arrays destructuring /////////////
 
-const restaurant = {
-	name: 'Classico Italiano',
-	location: 'Via Angelo Tavanti 23, Firenze, Italy',
-	categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
-	starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
-	mainMenu: ['Pizza', 'Pasta', 'Risotto'],
+// const restaurant = {
+// 	name: 'Classico Italiano',
+// 	location: 'Via Angelo Tavanti 23, Firenze, Italy',
+// 	categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
+// 	starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
+// 	mainMenu: ['Pizza', 'Pasta', 'Risotto'],
 
-	openingHours: {
-		thu: {
-			open: 12,
-			close: 22,
-		},
-		fri: {
-			open: 11,
-			close: 23,
-		},
-		sat: {
-			open: 0,
-			close: 24,
-		},
-	},
+// 	openingHours: {
+// 		thu: {
+// 			open: 12,
+// 			close: 22,
+// 		},
+// 		fri: {
+// 			open: 11,
+// 			close: 23,
+// 		},
+// 		sat: {
+// 			open: 0,
+// 			close: 24,
+// 		},
+// 	},
 
-	order(starterIndex, mainIndex) {
-		return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
-	},
-	orderDelivery({ starterIndex = 1, mainIndex = 0, time = '20:00', address }) {
-		console.log(
-			`Order received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
-		);
-	},
+// 	order(starterIndex, mainIndex) {
+// 		return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+// 	},
+// 	orderDelivery({ starterIndex = 1, mainIndex = 0, time = '20:00', address }) {
+// 		console.log(
+// 			`Order received! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
+// 		);
+// 	},
 
-	orderPasta(ing1, ing2, ing3) {
-		console.log(`Here is your delicious pasta with ${ing1}, ${ing2}, ${ing3}`);
-	},
+// 	orderPasta(ing1, ing2, ing3) {
+// 		console.log(`Here is your delicious pasta with ${ing1}, ${ing2}, ${ing3}`);
+// 	},
 
-	orderPizza(mainIngredient, ...otherIngredients) {
-		console.log(mainIngredient, otherIngredients);
-	},
+// 	orderPizza(mainIngredient, ...otherIngredients) {
+// 		console.log(mainIngredient, otherIngredients);
+// 	},
+// };
+// Strings
+
+const airline = 'TAP Air Portugal';
+const plane = 'A320';
+
+console.log(airline.toLowerCase());
+console.log(airline.toUpperCase());
+
+// Fix capitalization in name
+const passenger = 'hUmNA'; //Humna
+// const passengerToLower = passenger.toLowerCase();
+// console.log(passengerToLower);
+// const passengerCorrectName =
+// 	passengerToLower[0].toUpperCase() + passengerToLower.slice(1);
+// console.log(passengerCorrectName);
+
+const fixedName = (name) => {
+	const fname = name[0].toUpperCase() + name.slice(1);
+
+	console.log(fname);
 };
+// fixedName('humna');
+// fixedName('hUMNA');
+
+// comparing emails
+
+const email = 'hello@humna.io';
+const loginEmail = '  Hello@Humna.Io \n';
+
+const toLower = loginEmail.toLowerCase();
+// trim() method is to get rid of spaces and tabs
+const trimmedEmail = toLower.trim();
+// console.log(trimmedEmail);
+// console.log(loginEmail.toLowerCase().trim());
+
+// replacing
+// const priceUS = '$288.97';
+// const priceGB = priceUS.replace('$', '&').replace('.', ',');
+// console.log(priceGB);
+
+// const announcement =
+// 	'Please all passengers come to boarding door 8, please report to door 8';
+// console.log(announcement.replaceAll('door', 'gate'));
+// console.log(announcement.replace(/door/g, 'gate'));
+
+// boolean
+
+// const plane1 = 'Airbus 320neo';
+// console.log(plane1.includes('A320'));
+// console.log(plane1.startsWith('Air'));
+// console.log(plane1.startsWith('Airb'));
+
+// if (plane1.startsWith('Airbus') && plane1.endsWith('neo')) {
+// 	console.log('family');
+// }
+// practice
+
+// const checkedBaggage = (items) => {
+// 	const baggage=items.toLowerCase()
+// 	if(baggage.includes('knife'||baggage.includes('gun'))){
+// 		console.log('You r not allowed')
+// 	}else{
+// 		console.log('Welcome Aboard');
+// 	}
+// };
+// checkedBaggage('I have a laptop, some Food and a pocket Knife');
+// checkedBaggage('Socks, camera');
+// checkedBaggage('Got some snacks and a gun for protection');
+
+// console.log(plane[0]);
+// console.log('B730'[0]);
+// console.log(airline.indexOf('r'));
+// console.log(airline.lastIndexOf('r'));
+// console.log(airline.indexOf('Portugal'));
+
+// slice is for extraction
+// console.log(airline.slice(4));
+// start and end position index
+// console.log(airline.slice(4, 7));
+
+// getting  firest word till first space from airline
+// console.log(airline.slice(0, airline.indexOf(' ')));
+// getting last word after last space
+// console.log(airline.slice(airline.lastIndexOf(' ') + 1));
+
+// console.log(airline.slice(-2));
+// console.log(airline.slice(1, -1));
+
+// const checkMiddleSeat = (seat) => {
+// B and E are middle seats
+// 	const s = seat.slice(-1);
+// 	if (s === 'B' || s === 'E') console.log('U got the middle seat');
+// 	else console.log('u got lucky');
+// };
+// checkMiddleSeat('11B');
+// checkMiddleSeat('23C');
+// checkMiddleSeat('3E');
 
 // map iteration
 // const question = new Map([
@@ -376,46 +473,46 @@ const restaurant = {
 
 // ////////// coding challenges /////////////////
 
-const game = {
-	team1: 'Bayern Munich',
-	team2: 'Borrussia Dortmud',
-	players: [
-		[
-			'Neuer',
-			'Pavard',
-			'Martinez',
-			'Alaba',
-			'Davies',
-			'Kimich',
-			'Goretzka',
-			'Coman',
-			'Muller',
-			'Gnarby',
-			'Lewandowski',
-		],
-		[
-			'Burki',
-			'Schulz',
-			'Hummels',
-			'Akanji',
-			'Hakimi',
-			'Weigl',
-			'Witsel',
-			'Hazard',
-			'Brandt',
-			'Sancho',
-			'Gotze',
-		],
-	],
-	score: '4:0',
-	scored: ['Lewandowski', 'Gnarby', 'Lewandowski', 'Hummels'],
-	date: 'Nov 9th, 2037',
-	odds: {
-		team1: 1.33,
-		x: 3.25,
-		team2: 6.5,
-	},
-};
+// const game = {
+// 	team1: 'Bayern Munich',
+// 	team2: 'Borrussia Dortmud',
+// 	players: [
+// 		[
+// 			'Neuer',
+// 			'Pavard',
+// 			'Martinez',
+// 			'Alaba',
+// 			'Davies',
+// 			'Kimich',
+// 			'Goretzka',
+// 			'Coman',
+// 			'Muller',
+// 			'Gnarby',
+// 			'Lewandowski',
+// 		],
+// 		[
+// 			'Burki',
+// 			'Schulz',
+// 			'Hummels',
+// 			'Akanji',
+// 			'Hakimi',
+// 			'Weigl',
+// 			'Witsel',
+// 			'Hazard',
+// 			'Brandt',
+// 			'Sancho',
+// 			'Gotze',
+// 		],
+// 	],
+// 	score: '4:0',
+// 	scored: ['Lewandowski', 'Gnarby', 'Lewandowski', 'Hummels'],
+// 	date: 'Nov 9th, 2037',
+// 	odds: {
+// 		team1: 1.33,
+// 		x: 3.25,
+// 		team2: 6.5,
+// 	},
+// };
 
 // mapping
 // const rest = new Map();
@@ -431,7 +528,7 @@ const game = {
 // }
 
 //////////////// 2
-const val = Object.values(game.odds);
+// const val = Object.values(game.odds);
 // // console.log(val);
 // let sum = 0;
 // for (const odd of val) {
@@ -482,3 +579,21 @@ const val = Object.values(game.odds);
 // (7)
 // team1 < team2 && console.log(`team 1 won`);
 // team1 > team2 && console.log(`team 2 won`);
+
+// codinng challenge 3
+// const gameEvents = new Map([
+// 	[17, 'GOAL'],
+// 	[36, 'Substitution'],
+// 	[47, 'GOAL'],
+// 	[61, 'SUubstitution'],
+// 	[64, 'Yellow card'],
+// 	[69, 'Red card'],
+// 	[70, 'Substitution'],
+// 	[72, 'Substitution'],
+// 	[76, 'GOAL'],
+// 	[88, 'GOAL'],
+// 	[92, 'Yellow card'],
+// ]);
+// const staffUnique = [...new Set(staff)];
+// const events = [...new Set(gameEvents)];
+// console.log(events);
