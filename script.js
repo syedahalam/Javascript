@@ -43,11 +43,115 @@
 // };
 // Strings
 
+// coding challenge 4 ///////////
+
+document.body.append(document.createElement('textarea'));
+document.body.append(document.createElement('button'));
+const text = document.querySelector('textarea').value;
+
+document.querySelector('button').addEventListener('click', function () {
+	const text = document.querySelector('textarea').value;
+	console.log(text);
+
+	const rows = text.split('\n');
+	console.log(rows);
+
+	for (const [i, row] of rows.entries()) {
+		const [first, second] = row.toLowerCase().trim().split('_');
+		const output = `${first}${second.replace(
+			second[0],
+			second[0].toUpperCase()
+		)}`;
+		console.log(`${output.padEnd(20)}${'✅ '.repeat(i + 1)}`);
+	}
+
+	// console.log(rows[0].toUpperCase() + rows.slice(1));
+});
+// underscore_case;
+//  first_name;
+// Some_variable;
+//  calculate_Age;
+// delayed_departure;
+
+// /////
+const flights =
+	'_Delayed_Departure;fao93766109;txl2133758440;11:25+_Arrival;bru0943384722;fao93766109;11:45+_Delayed_Arrival;hel7439299980;fao93766109;12:05+_Departure;fao93766109;lis2323639855;12:30';
+
+for (const flight of flights.split('+')) {
+	const [type, from, to, time] = flight.split(';');
+	const output1 = `${type.startsWith('_Delayed') ? '🛑' : ''} ${type.replaceAll(
+		'_',
+		' '
+	)} ${from.slice(0, 3).toUpperCase()} to ${to
+		.slice(0, 3)
+		.toUpperCase()} (${time.replace(':', 'h')})`.padStart(39);
+	console.log(output1);
+}
+
+// split() and join()/////////////////////////
+
+// console.log('a+very+nice+string'.split('+'));
+// console.log('Syeda Humna Alam'.split(' '));
+
+const [firstName, lastName] = 'Syeda Humna Alam'.split(' ');
+
+const newName = ['Mrs. ' + firstName, lastName.toUpperCase()].join(' ');
+// console.log(newName);
+
+const passenger1 = 'jessica ann smith davis';
+
+const capitalizeName = (name) => {
+	const names = name.split(' ');
+	const namesUpper = [];
+
+	for (const n of names) {
+		namesUpper.push(n[0].toUpperCase() + n.slice(1));
+	}
+	console.log(namesUpper.join(' '));
+};
+// capitalizeName('jessica ann smith davis');
+// capitalizeName('syeda humna alam');
+
+// ////////////////////////////////////////////////
+
+// padding
+
+const message = 'Go to Gate 23';
+// console.log(message.padStart(25, '+').padEnd(35, '+'));
+
+// console.log('humna'.padStart(25, '+'));
+
+// //////// credit card app ///////////////////
+
+const maskedCreditCard = (number) => {
+	const str = number + '';
+	const last = str.slice(-4);
+	return last.padStart(str.length, '*');
+};
+
+// console.log(maskedCreditCard(657656767868));
+// console.log(maskedCreditCard('676876876876'));
+
+// ////////// repeat()
+
+const messageRepeat = 'Bad weathers.... All Departures Delayed... ';
+// console.log(messageRepeat.repeat(5));
+
+// //////
+const planeInLine = (n) => {
+	console.log(`There are ${n} planes in line ${'🛩'.repeat(n)}`);
+};
+// planeInLine(15);
+// planeInLine(3);
+// planeInLine(12);
+
+// /////////////////////// toUpperCase(), toLowerCase/////
+
 const airline = 'TAP Air Portugal';
 const plane = 'A320';
 
-console.log(airline.toLowerCase());
-console.log(airline.toUpperCase());
+// console.log(airline.toLowerCase());
+// console.log(airline.toUpperCase());
 
 // Fix capitalization in name
 const passenger = 'hUmNA'; //Humna
@@ -597,3 +701,5 @@ const trimmedEmail = toLower.trim();
 // const staffUnique = [...new Set(staff)];
 // const events = [...new Set(gameEvents)];
 // console.log(events);
+
+// ////// coding challenge
