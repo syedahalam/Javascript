@@ -64,11 +64,11 @@ const inputClosePin = document.querySelector('.form__input--pin');
 /////////////////////////////////////////////////
 // LECTURES
 
-const currencies = new Map([
-	['USD', 'United States dollar'],
-	['EUR', 'Euro'],
-	['GBP', 'Pound sterling'],
-]);
+// const currencies = new Map([
+// 	['USD', 'United States dollar'],
+// 	['EUR', 'Euro'],
+// 	['GBP', 'Pound sterling'],
+// ]);
 
 // const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
@@ -112,23 +112,42 @@ const currencies = new Map([
 
 // console.log('humna'.at(0));
 
-const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+// const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
-for (const movement of movements) {
-	if (movement > 0) {
-		console.log(`You deposited ${movement}`);
-	} else {
-		// Math.abs() to remove the - sign
-		console.log(`You withdraw ${Math.abs(movement)}`);
-	}
-}
+// for (const [i, movement] of movements.entries()) {
+// 	if (movement > 0) {
+// 		console.log(`Movement ${i + 1}: You deposited ${movement}`);
+// 	} else {
+// 		// Math.abs() to remove the - sign
+// 		console.log(`Movement ${i + 1}: You withdraw ${Math.abs(movement)}`);
+// 	}
+// }
 
-console.log('----------- forEach()');
-movements.forEach(function (movement) {
-	if (movement > 0) {
-		console.log(`You deposited ${movement}`);
-	} else {
-		// Math.abs() to remove the - sign
-		console.log(`You withdraw ${Math.abs(movement)}`);
-	}
-});
+// console.log('----------- forEach()');
+// movements.forEach(function (movement, i, arr) {
+// 	if (movement > 0) {
+// 		console.log(`Movement ${i + 1}: You deposited ${movement}`);
+// 	} else {
+// Math.abs() to remove the - sign
+// 		console.log(`Movement ${i + 1}: You withdraw ${Math.abs(movement)}`);
+// 	}
+// });
+
+// map and set in forEach
+
+// const currencies = new Map([
+// 	['USD', 'United States dollar'],
+// 	['EUR', 'Euro'],
+// 	['GBP', 'Pound sterling'],
+// ]);
+// currencies.forEach(function (currency, i, map) {
+// 	console.log(`${i}: ${currency}`);
+// });
+
+// // set
+
+// const currentUnique = new Set(['USD', 'GBP', 'USD', 'EUR', 'EUR']);
+// console.log(currentUnique);
+// currentUnique.forEach(function (currency, _currency, set) {
+// 	console.log(`${_currency}: ${currency}`);
+// });
